@@ -21,6 +21,7 @@
 		A77ECA2519BE48B6008979C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77ECA0719BE48B6008979C1 /* UIKit.framework */; };
 		A77ECA2D19BE48B6008979C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A77ECA2B19BE48B6008979C1 /* InfoPlist.strings */; };
 		A77ECA2F19BE48B6008979C1 /* AGEPassingDataChallengeSolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A77ECA2E19BE48B6008979C1 /* AGEPassingDataChallengeSolutionTests.m */; };
+		A77ECA3A19BE528E008979C1 /* AGEPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77ECA3919BE528E008979C1 /* AGEPDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A77ECA2A19BE48B6008979C1 /* AGEPassingDataChallengeSolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGEPassingDataChallengeSolutionTests-Info.plist"; sourceTree = "<group>"; };
 		A77ECA2C19BE48B6008979C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A77ECA2E19BE48B6008979C1 /* AGEPassingDataChallengeSolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGEPassingDataChallengeSolutionTests.m; sourceTree = "<group>"; };
+		A77ECA3819BE528E008979C1 /* AGEPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGEPDetailViewController.h; sourceTree = "<group>"; };
+		A77ECA3919BE528E008979C1 /* AGEPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGEPDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				A77ECA1519BE48B6008979C1 /* Main.storyboard */,
 				A77ECA1819BE48B6008979C1 /* AGEPDCSViewController.h */,
 				A77ECA1919BE48B6008979C1 /* AGEPDCSViewController.m */,
+				A77ECA3819BE528E008979C1 /* AGEPDetailViewController.h */,
+				A77ECA3919BE528E008979C1 /* AGEPDetailViewController.m */,
 				A77ECA1B19BE48B6008979C1 /* Images.xcassets */,
 				A77ECA0A19BE48B6008979C1 /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77ECA3A19BE528E008979C1 /* AGEPDetailViewController.m in Sources */,
 				A77ECA1419BE48B6008979C1 /* AGEPDCSAppDelegate.m in Sources */,
 				A77ECA1A19BE48B6008979C1 /* AGEPDCSViewController.m in Sources */,
 				A77ECA1019BE48B6008979C1 /* main.m in Sources */,

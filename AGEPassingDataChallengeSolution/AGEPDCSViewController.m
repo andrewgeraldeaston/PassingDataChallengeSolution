@@ -7,6 +7,7 @@
 //
 
 #import "AGEPDCSViewController.h"
+#import "AGEPDetailViewController.h"
 
 @interface AGEPDCSViewController ()
 
@@ -17,7 +18,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([sender isKindOfClass:[UIButton class]]) {  //ORIGIN CHECK
+        if ([segue.destinationViewController isKindOfClass:[AGEPDetailViewController class]]) {  // DESTINATION CHECK
+            AGEPDetailViewController *detailVC = segue.destinationViewController;
+            detailVC.informationFromTextField = self.textField.text; // PROXY ONLY
+            
+        }
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
