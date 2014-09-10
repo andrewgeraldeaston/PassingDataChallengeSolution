@@ -25,10 +25,10 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
-    if ([sender isKindOfClass:[UIButton class]]) {  //ORIGIN CHECK
-        if ([segue.destinationViewController isKindOfClass:[AGEPDetailViewController class]]) {  // DESTINATION CHECK
-            AGEPDetailViewController *detailVC = segue.destinationViewController;
-            detailVC.informationFromTextField = self.textField.text; // PROXY ONLY
+    if ([sender isKindOfClass:[UIButton class]]) {  //ORIGIN CHECK  (this is introspection)
+        if ([segue.destinationViewController isKindOfClass:[AGEPDetailViewController class]]) {  // DESTINATION CHECK (this is introspection)
+            AGEPDetailViewController *detailVC = segue.destinationViewController; // Create a PROXY VC
+            detailVC.informationFromTextField = self.textField.text; // Update the "PROXY property" with the VC Property(ORIGIN)
             
         }
     }
@@ -43,3 +43,6 @@
 }
 
 @end
+
+
+// This is a test to GIT about adding files AGEDCSViewcontroller.m

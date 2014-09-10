@@ -30,7 +30,7 @@
     // Do any additional setup after loading the view.
     
     
-    self.label.text = self.informationFromTextField;
+    self.label.text = self.informationFromTextField; // UPDATE THE DESTINATION DETAILVIEWCONTROLLER PROPERTY with the "PROXY VC PROPERTY"
     
     
 }
